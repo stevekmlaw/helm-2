@@ -1,0 +1,28 @@
+global:
+  namespace: microservices-demo
+  environment: development
+  domain: myapp.local
+
+
+# Service configurations
+user-service:
+  enabled: true
+  replicas: 1
+  image:
+    repository: nginx  # Using nginx for demo
+    tag: "1.25"
+  port: 80
+  ingress:
+    enabled: true
+    host: users.myapp.local
+
+order-service:
+  enabled: true
+  replicas: 1
+  image:
+    repository: nginx  # Using nginx for demo
+    tag: "1.25"
+  port: 8080
+  ingress:
+    enabled: true
+    host: orders.myapp.local

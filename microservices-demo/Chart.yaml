@@ -1,0 +1,16 @@
+apiVersion: v2
+name: microservices-demo
+description: A Helm umbrella chart for microservices
+type: application
+version: 0.2.0
+appVersion: "2.0.0"
+
+dependencies:
+  - name: user-service
+    version: "0.1.2"
+    repository: "file://charts/user-service"
+    condition: user-service.enabled
+  - name: order-service
+    version: "0.2.2"
+    repository: "file://charts/order-service"
+    condition: order-service.enabled

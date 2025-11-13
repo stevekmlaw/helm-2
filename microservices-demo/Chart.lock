@@ -1,0 +1,9 @@
+dependencies:
+- name: user-service
+  repository: file://charts/user-service
+  version: 0.1.2
+- name: order-service
+  repository: file://charts/order-service
+  version: 0.2.2
+digest: sha256:5b10d279999ee7fb398a27c52f1c1081daf4b89a075ecd65ab6b807130be1c20
+generated: "2025-11-11T16:29:05.44211+08:00"

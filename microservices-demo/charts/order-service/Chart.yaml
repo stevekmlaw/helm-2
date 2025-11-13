@@ -1,0 +1,6 @@
+apiVersion: v2
+name: order-service
+description: Order Management Microservice
+type: application
+version: 0.2.2
+appVersion: "1.0.0"
