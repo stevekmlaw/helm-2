@@ -1,5 +1,5 @@
 global:
-  namespace: microservices-demo
+  namespace: steve-test
   environment: development
   domain: myapp.local
 
